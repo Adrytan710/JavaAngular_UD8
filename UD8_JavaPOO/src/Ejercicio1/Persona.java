@@ -20,7 +20,7 @@ public class Persona {
 		this.altura = 0;
 	}
 	
-	public Persona(String nombre, int edad, String sexo, String DNI) {
+	public Persona(String nombre, int edad, char sexo, String DNI) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.sexo = SEXO;
@@ -29,7 +29,7 @@ public class Persona {
 		this.altura = 0;
 	}
 	
-	public Persona(String nombre, int edad, String DNI, String sexo, double peso, double altura) {
+	public Persona(String nombre, int edad, String DNI, char sexo, double peso, double altura) {
 		this.nombre = "Adri";
 		this.edad = 23;
 		this.DNI = "53654021N";
@@ -39,10 +39,8 @@ public class Persona {
 	}
 
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", edad=" + edad + ", DNI=" + DNI + ", sexo=" + sexo + ", peso=" + peso
-				+ ", altura=" + altura + "]";
+		return "Persona [SEXO=" + SEXO + ", nombre=" + nombre + ", edad=" + edad + ", DNI=" + DNI + ", sexo=" + sexo
+				+ ", peso=" + peso + ", altura=" + altura + "]";
 	}
 
-	
-	
 }
