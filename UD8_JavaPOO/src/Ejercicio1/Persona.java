@@ -3,10 +3,11 @@ package Ejercicio1;
 
 public class Persona {
 
+	private final char SEXO = 'H';
 	private String nombre;
 	private int edad;
 	private String DNI;
-	private String sexo;
+	private char sexo;
 	private double peso;
 	private double altura;
 	
@@ -14,7 +15,7 @@ public class Persona {
 		this.nombre = "";
 		this.edad = 0;
 		this.DNI = "53654021N";
-		this.sexo = "H";
+		this.sexo = SEXO;
 		this.peso = 0;
 		this.altura = 0;
 	}
@@ -22,15 +23,17 @@ public class Persona {
 	public Persona(String nombre, int edad, String sexo, String DNI) {
 		this.nombre = nombre;
 		this.edad = edad;
-		this.sexo = sexo;
+		this.sexo = SEXO;
 		this.DNI = "53654021N";
+		this.peso = 0;
+		this.altura = 0;
 	}
 	
 	public Persona(String nombre, int edad, String DNI, String sexo, double peso, double altura) {
 		this.nombre = "Adri";
 		this.edad = 23;
 		this.DNI = "53654021N";
-		this.sexo = "H";
+		this.sexo = SEXO;
 		this.peso = 70;
 		this.altura = 1.77;
 	}

@@ -4,10 +4,10 @@ package Ejercicio3;
 
 public class Electrodomestico {
 
-	public static double precio = 100;
-	public static Colores colorC = Colores.blanco;
-	public static Consumos consumoC = Consumos.F;
-	public static double pesoP = 5;
+	private final static double PRECIO = 100;
+	private final static Colores COLOR = Colores.blanco;
+	private final static Consumos CONSUMO = Consumos.F;
+	private final double PESO = 5;
 	
 	private double precio_base;
 	private Colores color;
@@ -15,16 +15,16 @@ public class Electrodomestico {
 	private double peso;
 	
 	public Electrodomestico() {
-		this.precio_base = precio;
-		this.color = colorC;
-		this.consumo_energetico = consumoC;
-		this.peso = pesoP;
+		this.precio_base = PRECIO;
+		this.color = COLOR;
+		this.consumo_energetico = CONSUMO;
+		this.peso = PESO;
 	}
 	
 	public Electrodomestico(double precio_base, double peso) {
 		this.precio_base = precio_base;
-		this.color = colorC;
-		this.consumo_energetico = consumoC;
+		this.color = COLOR;
+		this.consumo_energetico = CONSUMO;
 		this.peso = peso;
 	}
 	
